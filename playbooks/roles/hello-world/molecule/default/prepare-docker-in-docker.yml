@@ -11,7 +11,7 @@
 
     # We need to anticipate the installation of Docker before the role execution...
   - name: use our role to install Docker
-    include_tasks: ../../tasks/main.yml
+    include_tasks: main.yml
 
   - name: create /etc/docker
     file:
