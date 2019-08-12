@@ -7,6 +7,7 @@ platforms:
     pre_build_image: true  # avoid building an image from Dockerfile.j2
 provisioner:
   name: ansible
+  playbooks: prepare-docker-in-docker.yml
 scenario:
   name: default
   test_sequence:
