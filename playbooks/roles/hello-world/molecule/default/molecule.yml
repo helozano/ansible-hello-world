@@ -12,10 +12,10 @@ provisioner:
 scenario:
   name: default
   test_sequence:
+    - prepare
     - lint
     - destroy
     - syntax
-    - prepare
     - create
     - converge
     - idempotence
